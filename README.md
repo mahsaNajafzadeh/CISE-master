@@ -5,12 +5,9 @@ The CISE logic is able to prove that some distributed program is safe, in the se
 We have developed a SMT-based tool that automates CISE logic,  and verified several example applications using the tool. A successful analysis proves that a given program will maintain its integrity invariants. If not, the tool provides a counter-example, which the program developer can examine, in order to adjust the program design either by weakening application semantics, and/or by adding concurrency controls, in order to disallow toxic concurrency.  
 
   
-
 Code Sample
 
 The developer writes the properties of her program as Java annotations.
-
-See https://syncfree.lip6.fr/index.php/2-uncategorised/51-cise for me details.
  
 
 Main Publications
