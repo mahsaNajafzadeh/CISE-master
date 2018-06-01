@@ -35,7 +35,7 @@ public class AcquireEscrow  implements Operation  {
 	public Expr effect(Context ctx) throws Z3Exception {
 		CounterWithEscrow.globalEscrow=(IntExpr) ctx.mkSub(new ArithExpr[]{CounterWithEscrow.globalEscrow, value});
 	//	CounterWithEscrow.localEcrowTable.put(replica,ctx.MkIntConst(ctx.mkSymbol("localescrow")));
-	    CounterWithEscrow.localEcrowTable.put(replica, (IntExpr) ctx.mkAdd(new ArithExpr[]{CounterWithEscrow.localEcrowTable.get(replica), value}));
+	        CounterWithEscrow.localEcrowTable.put(replica, (IntExpr) ctx.mkAdd(new ArithExpr[]{CounterWithEscrow.localEcrowTable.get(replica), value}));
 		return CounterWithEscrow.globalEscrow;
 	}
 
