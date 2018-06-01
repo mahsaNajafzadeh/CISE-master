@@ -14,8 +14,8 @@ import applications.Account;
  */
 public class CommutativityTest {
     public static void main(String[] args)  {
-    AnnotatedSchema c=new Account();
-    CommutativityCheck.check(c);
+       AnnotatedSchema c=new Account();
+       CommutativityCheck.check(c);
     }
 
 }
